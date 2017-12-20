@@ -1,4 +1,4 @@
-## Setup IMS catalog z/OSMF workflow
+## Setup IMS catalog
 
 **Overview**
 
