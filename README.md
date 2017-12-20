@@ -2,32 +2,34 @@
 
 **Overview**
 
-With the IMS catalog  workflow you can rapidly provision catalog using the IBM® z/OS® Management Facility (z/OSMF)
+With the IMS catalog  workflow you can rapidly provision the catalog using the IBM® z/OS® Management Facility (z/OSMF)
 
-The IMS catalog workflow will provision catalog to an existing IMS with these steps:
+The IMS catalog workflow will provision the catalog to an existing IMS with these steps:
 * Create the catalog database.
-* Create the IMS DFSDFxxx proclib members to enable catalog.
+* Create the IMS DFSDFxxx proclib members to enable IMS catalog.
 * Establish the IMS active libraries.
 * Load the catalog database.
-* And optionally take an image copy of the HALDB catalog database.
+The workflow will also optionally take an image copy of the HALDB catalog database.
 
 **Pre-requisites**
-* An SMP/E install of IMS code has been done and the IMS load libraries are available.
+* An SMP/E installation of IMS is done and the IMS load libraries are available.
 * Identify the z/OS system parameters
-* IMS SVCs are installed on the system
+* IMS SVC modules are installed on the system
 * The Common Service Layer must be started.
 * z/OSMF must be started. Both the angel and server z/OSMF address spaces must be started. 
 
 **Security requirements**
+To run the workflow, you need the following authority:
 * RACF read authority on SMP/E installed IMS libraries
 * RACF update authority on the high level qualifiers (HLQs) you are using for the IMS instance libraries
 * Authority to ADD/DELETE APF authorizations
 
-**The IMS catalog workflows include the following files:**
-* The provision.xml file
+**Package structure**
+The IMS catalog workflows include the following files:
+* setupCatalog.xml
   * This is the file that provisions the catalog. You should not modify the workflow XML.
-* The workflow_variables.properties file
-  * The properties file contains values from the variables referenced in the provision.xml workflow.  Edit the workflow_variables.properties file specifying the system specific information for the variables in the file. 
+* workflow_variables.properties
+  * This properties file contains values from the variables referenced in the provision.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 **Installation**
 * FTP the provision.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
