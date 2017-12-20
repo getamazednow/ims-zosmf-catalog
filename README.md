@@ -35,7 +35,7 @@ The repository includes the following files:
 **Installation**  
 * FTP the setupCatalog.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
-* Examples: 
+* Example chmod commands: 
 ```Java
 chmod 755 setupCatalog.xml
 ```
