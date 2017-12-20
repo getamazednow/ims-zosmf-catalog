@@ -45,10 +45,10 @@ chmod -R 755 workflows
 ```
 
 **To run the workflow using the z/OSMF web interface**
-1. Log into to the IBM z/OS Management Facility
+1. Log into the IBM z/OS Management Facility web interface
 1. Select "Workflows" from the left menu
-1. Select the "Actions"  drop down menu
-1. Select the "Create Workflow"
+1. Select the "Actions" drop down menu
+1. Select "Create Workflow"
 1. In the Create Workflow dialog, specify:
     *	Workflow definition file: 
     *	Workflow variable input file:
