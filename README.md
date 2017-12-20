@@ -1,7 +1,6 @@
-# ims-devops-zosmf-catalog
-Setup IMS catalog z/OSMF workflow
+## Setup IMS catalog z/OSMF workflow
 
-Overview
+**Overview**
 
 With the IMS catalog  workflow you can rapidly provision catalog using the IBM® z/OS® Management Facility (z/OSMF)
 
