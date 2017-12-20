@@ -34,7 +34,7 @@ The IMS catalog workflow will provision catalog to an existing IMS with these st
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Examples: 
 ```Java
-chmod 755 provision.xml
+chmod 755 setupCatalog.xml
 ```
 * Or if the file is in a folder with the name of workflows:
 ```Java 
@@ -43,6 +43,7 @@ chmod -R 755 workflows
 
 **Common errors**
 * IZUWF0105E   Workflow property file file-name is either not found or cannot be accessed
+  * Typically this error comes from the file not existing at the path given, or the file exists, and chmod needs to be done on this file.
 
 You can find the z/OSMF documentation at
 https://www.ibm.com/support/knowledgecenter/search/IBM%20z%2FOS%20Management%20Facility?scope=SSLTBW_2.2.0
