@@ -2,7 +2,7 @@
 
 **Overview**
 
-With the IMS catalog  workflow you can rapidly provision the catalog using the IBM® z/OS® Management Facility (z/OSMF)
+With the IMS catalog workflow you can rapidly provision the catalog using the IBM® z/OS® Management Facility (z/OSMF)
 
 The IMS catalog workflow will provision the catalog to an existing IMS with these steps:
 * Create the catalog database.
@@ -25,11 +25,11 @@ To run the workflow, you need the following authority:
 * Authority to ADD/DELETE APF authorizations
 
 **Package structure**  
-The IMS catalog workflows include the following files:
+The repository includes the following files:
 * setupCatalog.xml
   * This is the file that provisions the catalog. You should not modify the workflow XML.
 * workflow_variables.properties
-  * This properties file contains values from the variables referenced in the provision.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
+  * This properties file contains values from the variables referenced in the setupCatalog.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 **Installation**  
 * FTP the setupCatalog.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
