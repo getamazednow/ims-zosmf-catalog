@@ -47,5 +47,7 @@ chmod -R 755 workflows
 * IZUWF0105E   Workflow property file file-name is either not found or cannot be accessed
   * Typically this error comes from the file not existing at the path given, or the file exists, and chmod needs to be done on this file.
 
+
 **z/OSMF documentation**
-https://www.ibm.com/support/knowledgecenter/search/IBM%20z%2FOS%20Management%20Facility?scope=SSLTBW_2.2.0
+
+Visit the IBM Knowledge Center for more information on [IBM z/OS Management Facility](https://www.ibm.com/support/knowledgecenter/search/IBM%20z%2FOS%20Management%20Facility?scope=SSLTBW_2.2.0)
