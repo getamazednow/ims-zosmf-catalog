@@ -18,20 +18,20 @@ The workflow will also optionally take an image copy of the HALDB catalog databa
 * The Common Service Layer must be started.
 * z/OSMF must be started. Both the angel and server z/OSMF address spaces must be started. 
 
-**Security requirements**
+**Security requirements**  
 To run the workflow, you need the following authority:
 * RACF read authority on SMP/E installed IMS libraries
 * RACF update authority on the high level qualifiers (HLQs) you are using for the IMS instance libraries
 * Authority to ADD/DELETE APF authorizations
 
-**Package structure**
+**Package structure**  
 The IMS catalog workflows include the following files:
 * setupCatalog.xml
   * This is the file that provisions the catalog. You should not modify the workflow XML.
 * workflow_variables.properties
   * This properties file contains values from the variables referenced in the provision.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
-**Installation**
+**Installation**  
 * FTP the provision.xml workflow and the workflow_variables.properties file to the z/OS host USS in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Examples: 
