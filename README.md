@@ -9,6 +9,7 @@ The IMS catalog workflow will provision the catalog to an existing IMS with thes
 * Create the IMS DFSDFxxx proclib members to enable IMS catalog.
 * Establish the IMS active libraries.
 * Load the catalog database.
+
 The workflow will also optionally take an image copy of the HALDB catalog database.
 
 **Pre-requisites**
