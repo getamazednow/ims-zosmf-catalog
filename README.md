@@ -54,14 +54,25 @@ chmod -R 755 workflows
     *	Workflow variable input file:
     *	System:
 1. Select "Next"
+1. Select “Assign all steps to owner user ID” if you are going to run all of the workflow steps with the current user ID.
 1. Select "Finish"
 1. Right-click on the first action and select "Perform"
 
 For more information about running a workflow see [Create a workflow](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zosmfworkflows.help.doc/izuWFhpCreateWorkflowDialog.html)
 
-**Common errors**
+**Troubleshooting**
 * IZUWF0105E   Workflow property file file-name is either not found or cannot be accessed
   * Typically this error comes from the file not existing at the path given, or the file exists, and chmod needs to be done on this file.
+* If there is no "Workflows" menu option in the z/OSMF web interface configure the IZUPRMxx member in the SYS.PARMLIB specifying the WORKLOAD_MGMT in the PLUGINS statement. For more information see [creating a IZUPRMxx](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.2.0/com.ibm.zos.v2r2.izua300/izuconfig_IZUPRMxx.htm) in the IBM Knowledge Center.
+  * Example: 
+  
+  PLUGINS(INCIDENT_LOG  
+        COMMSERVER_CFG
+        CAPACITY_PROV 
+        SOFTWARE_MGMT 
+        ISPF          
+        RESOURCE_MON  
+        WORKLOAD_MGMT)
 
 **z/OSMF documentation**
 
