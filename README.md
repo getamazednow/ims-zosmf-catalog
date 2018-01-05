@@ -1,4 +1,4 @@
-# Setup IMS catalog
+# Set up IMS catalog
 
 ## Overview
 
