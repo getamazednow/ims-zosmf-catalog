@@ -27,17 +27,17 @@ To run the workflow, you need the following authority:
 
 ## Package structure  
 The repository includes the following files:
-* setupCatalog.xml
+* setUpCatalog.xml
   * This is the file that provisions the catalog. You should not modify the workflow XML.
 * workflow_variables.properties
-  * This properties file contains values from the variables referenced in the setupCatalog.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
+  * This properties file contains values from the variables referenced in the setUpCatalog.xml workflow. Edit the workflow_variables.properties file to specify the system specific information for the variables in the file. 
 
 ## Installation  
-* FTP the setupCatalog.xml workflow and the workflow_variables.properties files to USS on the z/OS host in binary mode.
+* FTP the setUpCatalog.xml workflow and the workflow_variables.properties files to USS on the z/OS host in binary mode.
 * The files need to be made visible to the z/OSMF application.  Do this by changing the access permissions of the files using the chmod command
 * Example chmod commands: 
 ```Java
-chmod 755 setupCatalog.xml
+chmod 755 setUpCatalog.xml
 ```
 * Or if the file is in a folder with the name of workflows:
 ```Java 
