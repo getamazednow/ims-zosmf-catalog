@@ -4,7 +4,7 @@
 
 With the IMS™ catalog workflow you can rapidly provision the catalog using the IBM® z/OS® Management Facility (z/OSMF).
 
-The IMS catalog workflow will provision the catalog on an existing IMS with these steps:
+The IMS catalog workflow will provision the catalog to an existing IMS with these steps:
 * Create the catalog database.
 * Create the IMS DFSDFxxx proclib members to enable IMS catalog.
 * Establish the IMS active libraries.
