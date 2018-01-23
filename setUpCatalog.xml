@@ -224,7 +224,7 @@ You might want to verify that the deployment of the catalog was successful after
  </p></instructions>
         <weight>5</weight>
         <skills>System Programmer</skills>
-        <autoEnable>true</autoEnable>
+        <autoEnable>false</autoEnable>
         <canMarkAsFailed>false</canMarkAsFailed>
         <template>
             <inlineTemplate substitution="true">//*
@@ -266,7 +266,7 @@ You might want to verify that the deployment of the catalog was successful after
         </instructions>
         <weight>10</weight>
         <skills>System Programmer</skills>
-        <autoEnable>true</autoEnable>
+        <autoEnable>false</autoEnable>
         <canMarkAsFailed>false</canMarkAsFailed>
         <template>
             <inlineTemplate substitution="true">
@@ -655,7 +655,7 @@ ISRTLIST
         </instructions>
         <weight>10</weight>
         <skills>System Programmer</skills>
-        <autoEnable>true</autoEnable>
+        <autoEnable>false</autoEnable>
         <canMarkAsFailed>false</canMarkAsFailed>
         <template>
             <inlineTemplate substitution="true">//ZCLUDPRC JCLLIB ORDER=(${instance-DFS_PROCLIB_DS})
