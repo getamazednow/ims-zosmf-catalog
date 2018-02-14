@@ -563,8 +563,7 @@ ARCHDEF MEMBER(ARC1JCL) ALL
 CATALOG=Y
 ALIAS=DFSC
 RETENTION=(DAYS=40,VERSIONS=55)
-*
-//*</inlineTemplate>
+*</inlineTemplate>
             <submitAs maxRc="4">JCL</submitAs>
             <maxLrecl>80</maxLrecl>
             <saveAsDataset substitution="true">${instance-DFS_INSTALL_DS}(SAVDFSDF)</saveAsDataset>
